@@ -1,0 +1,8 @@
+<%
+var myVar = 'not used';
+this.variables.myVar = {scope: 'local'};
+env.variables.myVar = 'global';
+%>
+<p>Local "myVar": <%== 'myVar', 'scope' %></p>
+<p>Incoming local "path": <%== 'path' %></p>
+<p>Global "myVar": <%= env.variables.myVar %></p>

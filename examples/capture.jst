@@ -1,0 +1,8 @@
+<% this.variables.name = 'Linus'; %>
+<p>Before capture.</p>
+<%! 'greeting' %>
+Hello, <%== 'name' %>!
+<%!!%>
+<p>After capture.</p>
+<% this.variables.name = 'will not change capture'; %>
+<p>The greeting is: <%== 'greeting' %></p>

@@ -1,0 +1,16 @@
+<p>Logging to console</p>
+<% console.log('Just a message'); %>
+<% console.warn('Warning with number and a string: %d %s', 20, 'hello'); %>
+<% console.error('Error with two objects:'); %>
+<% const x = {'Hello': 'World'}; console.error(x, console); %>
+<%
+function f1() {
+    console.trace('A stack trace:');
+}
+
+function f2() {
+    f1()
+}
+
+f2();
+%>
